@@ -56,7 +56,7 @@ namespace CoffeeShop.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             _coffeeRepository.Delete(id);
